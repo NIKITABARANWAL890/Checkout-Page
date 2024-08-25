@@ -1,0 +1,28 @@
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+}
+.parent{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    height: 60%;
+    padding: 1rem;
+    border-radius: 14px;
+    background-color: rgb(255, 200, 0);
+}
+img{
+    height: 90%;
+    width: 100%;
+    border-radius: 10px;
+    background-size: cover;
+}
+p{
+    span{
+        font-weight: 600;
+    }
+    font-size: 1.4rem;
+}

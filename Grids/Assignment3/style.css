@@ -1,0 +1,41 @@
+.container{
+    height: 150px;
+    width: 700px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-flow: row;
+    gap: 0.6rem;
+    padding: 0.5rem;
+    border: 2px solid black;
+    border-radius: 8px;
+}
+.box{
+    border-radius: 4px;
+}
+.box:nth-child(n){
+    background-color:grey;
+}
+.box:nth-child(2n){
+    background-color:  rgba(47, 45, 45, 0.43);
+}
+.box3{
+    grid-column: 1/2;
+}
+.box4{
+    grid-column: 2/3;
+}
+.box5{
+    grid-column: 3/4;
+}
+.box6{
+    grid-column: 4/5;
+}
+.box7{
+    grid-column: 5/6;
+}
+.box8{
+    grid-column: 6/7;
+}
+.box1, .box2{
+    grid-row: 2/3;
+}

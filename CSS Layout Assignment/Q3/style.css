@@ -1,0 +1,28 @@
+.navbar{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    gap: 2rem;
+    padding: 1rem;
+    background-color: rgba(4, 4, 156, 0.614);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+
+#b {
+    border-bottom: 2px solid black;
+}
+#a{
+    border-bottom: 2px solid rebeccapurple;
+}
+#c{
+    border-bottom: 2px solid blue;
+}
+#d{
+    border-bottom: 2px solid pink;
+}
+#e{
+    border-bottom: 2px solid yellow;
+}

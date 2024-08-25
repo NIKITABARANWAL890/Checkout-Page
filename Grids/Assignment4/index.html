@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Justify Items vs Justify Self</title>
+    <style>
+        /* Container with justify-items */
+        .container-justify-items {
+            display: grid;
+            grid-template-columns: repeat(2, 100px);
+            justify-items: center; /* Center all items within their cells */
+            gap: 10px;
+            margin-bottom: 20px;
+            border: 1px solid black;
+            width: 500px;
+        }
+
+        /* Container with justify-self */
+        .container-justify-self {
+            display: grid;
+            grid-template-columns: 100px 100px;
+            gap: 10px;
+            border: 1px solid black;
+            width: 500px;
+        }
+
+        .item {
+            background-color: lightblue;
+            height: 50px;
+            border: 1px solid black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Justify-self applied to individual items */
+        .item1 {
+            justify-self: start; /* Align to the start (left) of the cell */
+        }
+
+        .item2 {
+            justify-self: end; /* Align to the end (right) of the cell */
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Example of justify-items</h2>
+    <div class="container-justify-items">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+
+    <h2>Example of justify-self</h2>
+    <div class="container-justify-self">
+        <div class="item item1">Item 1</div>
+        <div class="item item2">Item 2</div>
+        <div class="item">Item 3</div>
+        <div class="item">Item 4</div>
+    </div>
+
+</body>
+</html>

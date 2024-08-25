@@ -1,0 +1,28 @@
+.container{
+    display: grid;
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    gap: 10px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "a1 a1 a2"
+    "a1 a1 b2"
+    "c1 c2 c2";
+}
+.item{
+    background-color: aqua;
+    margin: 1px;
+    padding: 3px;
+}
+div{
+    background-color: red;
+}
+.a1{
+    grid-area: a1;
+    background-color:pink;
+}
+.c2{
+    grid-area: c2;
+    background-color: black;
+}
